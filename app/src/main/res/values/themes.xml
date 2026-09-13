@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.TalksyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/talksy_primary</item>
+        <item name="colorPrimaryDark">@color/talksy_primary_dark</item>
+        <item name="colorAccent">@color/talksy_accent</item>
+        <item name="android:windowBackground">@color/talksy_bg</item>
+    </style>
+
+    <style name="Theme.TalksyApp.Splash" parent="Theme.TalksyApp">
+        <item name="android:windowBackground">@color/talksy_primary</item>
+    </style>
+</resources>
