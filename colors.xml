@@ -1,0 +1,14 @@
+<resources>
+    <color name="talksy_primary">#4A6FE3</color>
+    <color name="talksy_primary_dark">#3554B8</color>
+    <color name="talksy_accent">#25D366</color>
+    <color name="talksy_bg">#F5F7FB</color>
+    <color name="bubble_sent">#4A6FE3</color>
+    <color name="bubble_received">#FFFFFF</color>
+    <color name="text_primary">#1A1D29</color>
+    <color name="text_secondary">#7A7F94</color>
+    <color name="online_green">#25D366</color>
+    <color name="error_red">#E53935</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
