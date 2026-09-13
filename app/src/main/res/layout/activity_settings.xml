@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/talksy_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/talksy_primary"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/settings"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/rowEditProfile"
+        style="@style/SettingsRow">
+        <TextView style="@style/SettingsRowText" android:text="@string/edit_profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowNotifications"
+        style="@style/SettingsRow">
+        <TextView style="@style/SettingsRowText" android:text="Notifications" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowPrivacy"
+        style="@style/SettingsRow">
+        <TextView style="@style/SettingsRowText" android:text="Privacy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowAbout"
+        style="@style/SettingsRow">
+        <TextView style="@style/SettingsRowText" android:text="@string/about" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowLogout"
+        style="@style/SettingsRow">
+        <TextView
+            style="@style/SettingsRowText"
+            android:text="@string/logout"
+            android:textColor="@color/error_red" />
+    </LinearLayout>
+
+</LinearLayout>
