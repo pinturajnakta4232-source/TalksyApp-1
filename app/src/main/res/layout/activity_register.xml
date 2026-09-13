@@ -20,7 +20,7 @@
             android:src="@drawable/ic_person_placeholder"
             app:civ_border_width="2dp"
             app:civ_border_color="@color/talksy_primary"
-            xmlns:app="http://schemas.android.com/apk/res-auto" />
+            
 
         <TextView
             android:id="@+id/tvAddPhoto"
