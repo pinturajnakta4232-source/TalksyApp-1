@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/talksy_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/talksy_primary"
+        app:navigationIcon="@drawable/ic_back">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivReceiverPhoto"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_person_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/tvReceiverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvReceiverStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:alpha="0.85"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/emptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Say hello 👋"
+            android:textColor="@color/text_secondary"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/type_a_message"
+            android:background="@drawable/bg_message_input"
+            android:padding="12dp"
+            android:maxLines="4"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_send_button"
+            android:src="@drawable/ic_send"
+            android:contentDescription="Send" />
+    </LinearLayout>
+</LinearLayout>
